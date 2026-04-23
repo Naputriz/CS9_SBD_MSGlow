@@ -1,0 +1,327 @@
+.main {
+  font-family: var(--font-geist-sans), sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fcfcfc;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.logoText {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.logoSubtext {
+  font-size: 0.8rem;
+  letter-spacing: 8px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 3rem;
+  margin-top: -1rem;
+}
+
+/* About Us */
+.aboutText {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.8;
+}
+
+/* Products */
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.productCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.productImageWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
+}
+
+.productInfo {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+/* Contact Us */
+.contactGridTop, .contactGridBottom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contactCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  width: calc(33.333% - 1.5rem);
+  min-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.contactCardHalf {
+  width: calc(50% - 1rem);
+  max-width: 500px;
+}
+
+.contactCard:hover {
+  transform: scale(1.02);
+}
+
+.contactImageWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.contactImageLabel {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  border-top: 1px solid #eee;
+  color: #333;
+}
+
+/* Footer / Office */
+.footer {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+
+.officeImageWrapper {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  display: flex;
+}
+
+.officeInfo {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.officeTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.officeDetail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.officeIcon {
+  margin-right: 1rem;
+  color: #000;
+  margin-top: 3px;
+}
+
+/* Main Dark Footer */
+.mainFooter {
+  background-color: #2e2f34;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  border-bottom: 1px solid #444;
+  padding-bottom: 2rem;
+}
+
+.footerLogoText {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.socialIcons span {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.socialIcons span:hover {
+  opacity: 0.7;
+}
+
+.footerLinks {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2rem;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerCol h4 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footerCol p {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footerCol p:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactCard {
+    width: 100%;
+  }
+  .contactCardHalf {
+    width: 100%;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+  .footerTop {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
